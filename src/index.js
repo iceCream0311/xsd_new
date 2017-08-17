@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {BrowserRouter as Router,Route,Switch} from 'react-router-dom';
+import {BrowserRouter as Router,Route,Switch,Link} from 'react-router-dom';
 import './css/index.css';
 import './css/App.css';
 import App from './App';
@@ -14,13 +14,14 @@ let setFontSize = () =>{
 }
 setFontSize()
 ReactDOM.render((
-  <Router>
-    <App>
-      <Switch>
-        <Route exact path="/" component={Indexpage} />
-        <Route path="/main" component={Main} />
-      </Switch>
-    </App>
+ <Router>
+    <div>
 
+      <hr/>
+
+      <Route exact path="/" component={Indexpage}/>
+      <Route path="/main" component={Main}/>
+      <Route path="/app" component={App}/>
+    </div>
   </Router>
   ),document.getElementById('root'));
