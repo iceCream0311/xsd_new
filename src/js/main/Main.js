@@ -4,17 +4,14 @@ import App from '../../App';
 class Main extends Component {
   render() {
     return (
- <Router>
-    <div>
-      <ul>
-        <li><Link to="/app">aaa</Link></li>
-      </ul>
-
-      <hr/>
-
-      <Route path="/app" component={App}/>
-    </div>
-  </Router>
+        <div>
+          <ul>
+            <li><Link to="/manager">Manager</Link></li>
+          </ul>
+          <div id="mancontainer">
+            {this.props.children}
+        </div>
+        </div>
     );
   }
 }

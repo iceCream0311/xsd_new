@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import {BrowserRouter as Router, Route,Link
 } from 'react-router-dom'
-class Indexpage extends Component {
+class Detail extends Component {
   render() {
     return (
-      <div className="Indexpage">
-       index
+      <div className="detail">
+        Detail
       </div>
     );
   }
 }
 
-export default Indexpage;
+export default Detail;
